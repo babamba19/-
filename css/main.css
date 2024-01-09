@@ -45,7 +45,132 @@ body {
   width: 100%;
   clear: both;
 }
-/* 레이아웃 */
+/* 안내창 */
+body.active{
+  overflow-y: auto;
+}
+/* .modal-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.modal-main{
+  width: 600px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border-radius: 50px;
+}
+.modal-main .modal-logo{
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: url("../images/chat-btn.png") no-repeat center rgb(74, 202, 128);
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50% );
+  border-radius: 100px;
+  border: 5px solid white   ;
+}
+.modal-nonotic{
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+.modal-nonotic strong{
+  color: #ed1c24;
+  font-weight: 800;
+  text-decoration: underline yellow;
+  text-decoration-thickness: 7px;
+}
+.modal-nonotic span{
+  font-size: medium;
+}
+.modal-close{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  padding: 15px;
+  width: 600px;
+  height: 50px;
+  background-color: #dadada;
+  border-radius: 0 0 50px 50px;
+}
+.modal-close i{
+  font-size: small;
+} */
+.modal-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-main{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+  border-radius: 50px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+.modal-main .modal-logo{
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: url("../images/chat-btn.png") no-repeat center rgb(74, 202, 128);
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50% );
+  border-radius: 100px;
+  border: 5px solid white   ;
+}
+.modal-close{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d8d8d8;
+  border-radius: 0 0 50px 50px; 
+}
+.modal-nonotic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal-nonotic strong{
+  color: #ed1c24;
+  background: linear-gradient(to top ,  yellow 50%, transparent 50%);
+}
+.modal-nonotic span{
+  font-size: 16px;
+  font-weight: 300;
+}
+/* 레이아웃 */ 
 .wrap {
   display: block;
   position: relative;
